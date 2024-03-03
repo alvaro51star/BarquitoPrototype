@@ -12,6 +12,7 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private float maxAngleSpeed = 5f;
     //[SerializeField] private float steerDirection;
     [SerializeField] private Transform motorPosition;
+    public float m_slow;
 
     Vector2 playerInput;
     // Start is called before the first frame update
@@ -58,5 +59,7 @@ public class BoatMovement : MonoBehaviour
         {
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         }
+
+        rb.velocity *= m_slow;
     }
 }
