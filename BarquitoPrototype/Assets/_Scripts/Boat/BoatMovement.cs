@@ -43,9 +43,10 @@ public class BoatMovement : MonoBehaviour
             rb.angularVelocity -= rb.angularVelocity * Time.fixedDeltaTime;
         }
         //Frena cuando deja de pulsar el boton
-        if (playerInput[0] == 0)
+        if (playerInput[0] <= 0)
         {
             rb.velocity -= rb.velocity * Time.fixedDeltaTime;
+            rb.angularVelocity -= rb.angularVelocity * Time.fixedDeltaTime;
         }
 
         if (rb.angularVelocity.magnitude >= maxAngleSpeed)
