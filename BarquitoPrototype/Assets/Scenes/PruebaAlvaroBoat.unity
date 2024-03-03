@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  speed: 5
+  speed: 100
   maxSpeed: 10
   steerForce: 1.5
   maxAngleSpeed: 0.5
@@ -1111,7 +1111,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281651539}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
