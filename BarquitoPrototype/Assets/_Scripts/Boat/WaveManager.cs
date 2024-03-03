@@ -12,6 +12,8 @@ public class WaveManager : MonoBehaviour
     [SerializeField] private float speed = 1f;
     [SerializeField] private float offset = 0f;
 
+    MeshRenderer mesh;
+
     private void Awake()
     {
         if (instance == null)
@@ -31,6 +33,7 @@ public class WaveManager : MonoBehaviour
 
     public float GetWaveHeight(float _x)
     {
+        
         return amplitude * Mathf.Sin(_x / length + offset);
     }
 }
