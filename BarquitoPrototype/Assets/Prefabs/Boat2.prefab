@@ -313,6 +313,11 @@ MonoBehaviour:
   m_currentBienestarBarco: 0
   m_maxBienestarBarco: 100
   m_desgasteMultiplier: 5
+  m_secondsToFirstHit: 10
+  m_currentGasolina: 0
+  m_maxGasolina: 100
+  m_consumoGasolina: 0.05
+  m_repostarTag: Repostar
 --- !u!1 &7718272680891967585
 GameObject:
   m_ObjectHideFlags: 0

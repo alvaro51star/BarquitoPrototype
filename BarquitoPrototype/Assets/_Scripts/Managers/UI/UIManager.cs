@@ -18,6 +18,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI m_desgasteText;
     [SerializeField] private Image m_desgasteImg;
 
+    [Header("Gasolina")]
+    [SerializeField] private Image m_gasolinaImg;
+
     private void Awake()
     {
         if (instance == null)
@@ -38,6 +41,13 @@ public class UIManager : MonoBehaviour
     {
         float resultado = actualState / maxState;
         m_desgasteImg.fillAmount = resultado;
+        Debug.Log("img fill: " + resultado);
+    }
+
+    public void GasolinaFillImage(float actualState, float maxState)
+    {
+        float resultado = actualState / maxState;
+        m_gasolinaImg.fillAmount = resultado;
         Debug.Log("img fill: " + resultado);
     }
 

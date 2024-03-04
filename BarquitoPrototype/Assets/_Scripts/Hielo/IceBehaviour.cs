@@ -17,7 +17,8 @@ public class IceBehaviour : MonoBehaviour
     public void BreakIce()
     {
         m_intactIce.SetActive(false);
-        m_brokenIce.SetActive(true);
+        m_brokenIce.SetActive(false);
         //m_iceAnimation.Play();
+        //gameObject.SetActive(false);
     }
 }

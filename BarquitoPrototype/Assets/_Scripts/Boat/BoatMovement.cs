@@ -13,12 +13,14 @@ public class BoatMovement : MonoBehaviour
     //[SerializeField] private float steerDirection;
     [SerializeField] private Transform motorPosition;
     public float m_slow;
+    private BoatManager m_boatManager;
 
     Vector2 playerInput;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        m_boatManager = GetComponent<BoatManager>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class BoatMovement : MonoBehaviour
     {
         if (playerInput[0] > 0)
         {
+            m_boatManager.LowerGas();
             rb.AddForce(playerInput[0] * speed * transform.forward, ForceMode.Force);
             rb.AddForceAtPosition(-playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
         }
