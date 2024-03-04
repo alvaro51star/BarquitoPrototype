@@ -32,6 +32,6 @@ public class PlayerIceBehaviour : MonoBehaviour
         float slow = gameObject.GetComponent<Rigidbody>().mass / ice.mass;
         Debug.Log("slow: " + slow);
         m_boatMovement.m_slow = slow;
-        m_boatManager.Desgaste(slow);
+        m_boatManager.Desgaste(ice.mass / gameObject.GetComponent<Rigidbody>().mass);
     }
 }
