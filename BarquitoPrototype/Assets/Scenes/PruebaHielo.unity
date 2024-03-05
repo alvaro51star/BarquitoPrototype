@@ -236,31 +236,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hielito_02
       objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -751,31 +726,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hielito_05
       objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1048,31 +998,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hielito_09
       objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1178,31 +1103,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hielito_07
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1775,31 +1675,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hielito_04
       objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1867,31 +1742,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hielito_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2505,31 +2355,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hielito_06
       objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2598,31 +2423,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hielito_08
       objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2690,31 +2490,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hielito_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2878,31 +2653,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hielito
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7889812730405601409, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8070643741662752216, guid: bc4c9484256aeef4a860e465e594034b,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3282,6 +3032,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6436186741407165073, guid: 01b0dc0b74a70ea4b85c6a4282f97b08,
+        type: 3}
+      propertyPath: m_desgasteMultiplier
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7137553177186866717, guid: 01b0dc0b74a70ea4b85c6a4282f97b08,
         type: 3}
       propertyPath: m_Name
