@@ -181,7 +181,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 8541883541441777824}
   boatMovement: {fileID: 3293181953951137295}
   shootPoint: {fileID: 991981326834213715}
-  atractionForce: 5
+  atractionForce: 100
 --- !u!120 &8541883541441777824
 LineRenderer:
   serializedVersion: 2
