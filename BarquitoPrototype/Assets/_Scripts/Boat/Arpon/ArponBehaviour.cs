@@ -17,6 +17,9 @@ public class ArponBehaviour : MonoBehaviour
     [SerializeField] private Transform shootPoint;
     private bool isArponActive = false;
 
+    [SerializeField] private float atractionForce = 5f;
+    private Transform nearestIceberg;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +29,7 @@ public class ArponBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Transform nearestIceberg = NearestIceberg();
+        nearestIceberg = NearestIceberg();
         if (nearestIceberg == null)
         {
             //Debug.Log("Null Iceberg");
@@ -55,8 +58,16 @@ public class ArponBehaviour : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+        if (isArponActive)
+        {
+            Vector3 force = nearestIceberg.position - boatMovement.transform.position;
+            force.Normalize();
+            force *= atractionForce * Time.fixedDeltaTime;
+            boatMovement.AddForceToMovement(force);
+        }   
     }
+
+
 
     private void ToggleArpon(Transform nearestIceberg)
     {
