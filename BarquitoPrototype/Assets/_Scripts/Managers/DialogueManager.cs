@@ -44,6 +44,7 @@ public class DialogueManager : MonoBehaviour
         m_dialogueIsPlaying = false;
         DialogueSwitchMode(false);
         DialogueChangeText("");
+        EventManager.EndDialogue?.Invoke();
     }
 
     private void ContinueDialogue()

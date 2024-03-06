@@ -22,9 +22,18 @@ public class RadioManager : MonoBehaviour
     private void Start()
     {
         m_musicVolume = m_musicAudioSource.volume;
-        EventManager.StartDialogue += StartCall;
     }
-    
+    private void OnEnable()
+    {
+        EventManager.StartDialogue += StartCall;
+        EventManager.EndDialogue += EndCall;
+    }
+    private void OnDisable()
+    {
+        EventManager.StartDialogue -= StartCall;
+        EventManager.EndDialogue -= EndCall;
+    }
+
     public void PlayStopMusic()
     {
         if(m_musicAudioSource.isPlaying)

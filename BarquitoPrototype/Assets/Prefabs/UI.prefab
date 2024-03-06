@@ -2422,7 +2422,7 @@ MonoBehaviour:
   m_songOn: {fileID: 2313087144162418405}
   m_musicAudioSource: {fileID: 5800262791331980323}
   m_callAudioSource: {fileID: 5849378928980780876}
-  m_musicInCallVolume: 0.5
+  m_musicInCallVolume: 0.085
   m_clipList:
   - {fileID: 8300000, guid: 1841f98d55f001649bbccc1bb43aad67, type: 3}
   - {fileID: 8300000, guid: 86c5810fd0d4cf64aa7c2b75f017f260, type: 3}
@@ -2442,7 +2442,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2540,7 +2540,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
