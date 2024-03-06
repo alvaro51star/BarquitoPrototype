@@ -38,7 +38,7 @@ public class BoatMovement : MonoBehaviour
             rb.AddForceAtPosition(-playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
         }
 
-        
+
         //rb.AddTorque(playerInput[1] * steerForce * Vector3.up, ForceMode.Force);
 
         //Deja de rotar cuando deja de pulsar el boton
@@ -64,5 +64,10 @@ public class BoatMovement : MonoBehaviour
         }
 
         rb.velocity *= m_slow;
+    }
+
+    public float GetForwardAngleRadar()
+    {
+        return transform.eulerAngles.y;
     }
 }
