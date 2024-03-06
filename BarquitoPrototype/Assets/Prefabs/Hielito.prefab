@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8070643741662752216}
   - component: {fileID: 1052743177667111757}
   - component: {fileID: 6708222150226011543}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hielito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,6 +175,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8104204535093128808, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -7038920633608502133, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -6708456981969361967, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2598214407370238830, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -2588908029015008863, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 515949659597697170, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4adaadb858948c9409bf61a03cb1851d,
         type: 3}
       propertyPath: m_Name
@@ -182,8 +212,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4adaadb858948c9409bf61a03cb1851d,
         type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618258335573221624, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737078603124897019, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8575184106611496155, guid: 4adaadb858948c9409bf61a03cb1851d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -264,6 +314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: IceBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5ca906a4f15b3814ba7694aabceb3ab8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

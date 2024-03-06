@@ -2485,6 +2485,7 @@ MonoBehaviour:
   m_desgasteText: {fileID: 1135331447}
   m_desgasteImg: {fileID: 2052361115}
   m_gasolinaImg: {fileID: 2103828366}
+  m_RadioMenu: {fileID: 0}
 --- !u!1 &1617062430
 GameObject:
   m_ObjectHideFlags: 0
