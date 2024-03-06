@@ -55,18 +55,27 @@ public class RadioManager : MonoBehaviour
     public void NextSong()
     {
         m_songClip++;
+        if(m_songClip >= m_clipList.Count)
+        {
+            m_songClip = 0;
+        }
         PlaySong();
     }
 
     public void PreviousSong()
     {
         m_songClip--;
+        if(m_songClip < 0)
+        {
+            m_songClip = m_clipList.Count - 1;
+        }
         PlaySong();
     }
 
     private void PlaySong()
     {
+        Debug.Log(m_songClip);
         m_musicAudioSource.clip = m_clipList[m_songClip];
-        m_callAudioSource.Play();
+        m_musicAudioSource.Play();
     }
 }
