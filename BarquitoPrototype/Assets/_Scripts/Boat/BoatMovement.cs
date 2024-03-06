@@ -7,7 +7,8 @@ public class BoatMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float speed = 5f;
-    [SerializeField] private float maxSpeed = 20f;
+    [SerializeField] private float maxSpeedForward = 20f;
+    [SerializeField] private float maxSpeedBackward = 5f;
     [SerializeField] private float steerForce = 3f;
     [SerializeField] private float maxAngleSpeed = 5f;
     //[SerializeField] private float steerDirection;
@@ -31,13 +32,39 @@ public class BoatMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (playerInput[0] > 0)
+        if (playerInput[0] != 0)
         {
             m_boatManager.LowerGas();
-            rb.AddForce(playerInput[0] * speed * transform.forward, ForceMode.Force);
+        }
+
+        #region Movimiento
+
+        rb.AddForce(playerInput[0] * speed * transform.forward, ForceMode.Force);
+
+        if (playerInput[0] > 0)
+        {
+            rb.AddForceAtPosition(-playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
+            
+            if (rb.velocity.magnitude >= maxSpeedForward)
+            {
+                rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeedForward);
+            }
+        }
+        else if (playerInput[0] < 0)
+        {
+            rb.AddForceAtPosition(playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
+
+            if (rb.velocity.magnitude >= maxSpeedBackward)
+            {
+                rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeedBackward);
+            }
+        }
+        else
+        {
             rb.AddForceAtPosition(-playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
         }
 
+        #endregion
 
         //rb.AddTorque(playerInput[1] * steerForce * Vector3.up, ForceMode.Force);
 
@@ -47,20 +74,15 @@ public class BoatMovement : MonoBehaviour
             rb.angularVelocity -= rb.angularVelocity * Time.fixedDeltaTime;
         }
         //Frena cuando deja de pulsar el boton
-        if (playerInput[0] <= 0)
+        if (playerInput[0] == 0)
         {
             rb.velocity -= rb.velocity * Time.fixedDeltaTime;
-            rb.angularVelocity -= rb.angularVelocity * Time.fixedDeltaTime;
+            //rb.angularVelocity -= rb.angularVelocity * Time.fixedDeltaTime;
         }
 
         if (rb.angularVelocity.magnitude >= maxAngleSpeed)
         {
             rb.angularVelocity = Vector3.ClampMagnitude(rb.angularVelocity, maxAngleSpeed);
-        }
-
-        if (rb.velocity.magnitude >= maxSpeed)
-        {
-            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         }
 
         rb.velocity *= m_slow;
