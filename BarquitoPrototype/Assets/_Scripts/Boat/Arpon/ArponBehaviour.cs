@@ -29,7 +29,7 @@ public class ArponBehaviour : MonoBehaviour
         }
         else
         {
-            arponHead.LookAt(new Vector3(nearestIceberg.position.x, transform.position.y, nearestIceberg.position.z));
+            arponHead.LookAt(new Vector3(nearestIceberg.position.x, arponHead.position.y, nearestIceberg.position.z));
         }
     }
 
