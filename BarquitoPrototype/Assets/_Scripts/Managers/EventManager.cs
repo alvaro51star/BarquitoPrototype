@@ -6,4 +6,5 @@ using UnityEngine;
 public static class EventManager
 {
     public static Action StartDialogue;
+    public static Action EndDialogue;
 }
