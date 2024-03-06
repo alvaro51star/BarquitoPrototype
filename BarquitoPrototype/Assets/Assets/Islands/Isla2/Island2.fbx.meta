@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: df22b07948875da4eb321b12ab0265b8
+guid: abfd8e1c9682eba45b0b339c2b63b1d3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: a643dad5ce9e21f4d8287577101b4c5e, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DiffuseI_Islands
+    second: {fileID: 2800000, guid: 195f9b9d2e41f5e4e8385c361ccaaa6e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RGH_Islands
+    second: {fileID: 2800000, guid: a80fe18ae763ee64e8c598d539985bd8, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
