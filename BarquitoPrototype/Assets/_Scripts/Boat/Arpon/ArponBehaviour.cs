@@ -62,8 +62,10 @@ public class ArponBehaviour : MonoBehaviour
         {
             Vector3 force = nearestIceberg.position - boatMovement.transform.position;
             force.Normalize();
-            force *= atractionForce * Time.fixedDeltaTime;
-            boatMovement.AddForceToMovement(force);
+            //Debug.Log("Fuerza: " + force);
+            //Debug.Log("Posicion Player: " + boatMovement.transform.position);
+            force *= atractionForce;
+            boatMovement.AddForceToMovement(new Vector3(force.x, 0, force.z));
         }   
     }
 
