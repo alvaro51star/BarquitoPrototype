@@ -53,6 +53,11 @@ public class ArponBehaviour : MonoBehaviour
         lineRenderer.SetPosition(0, shootPoint.position);
     }
 
+    private void FixedUpdate()
+    {
+        
+    }
+
     private void ToggleArpon(Transform nearestIceberg)
     {
         if (!nearestIceberg)
