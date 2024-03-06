@@ -13,6 +13,7 @@ public class BoatMovement : MonoBehaviour
     [SerializeField] private float maxAngleSpeed = 5f;
     //[SerializeField] private float steerDirection;
     [SerializeField] private Transform motorPosition;
+    public bool canMove = true;
     public float m_slow;
     private BoatManager m_boatManager;
 
@@ -38,31 +39,38 @@ public class BoatMovement : MonoBehaviour
         }
 
         #region Movimiento
-
-        rb.AddForce(playerInput[0] * speed * transform.forward, ForceMode.Force);
-
-        if (playerInput[0] > 0)
+        if (canMove)
         {
-            rb.AddForceAtPosition(-playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
-            
-            if (rb.velocity.magnitude >= maxSpeedForward)
+            rb.AddForce(playerInput[0] * speed * transform.forward, ForceMode.Force);
+
+            if (playerInput[0] > 0)
             {
-                rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeedForward);
+                rb.AddForceAtPosition(-playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
+
+                if (rb.velocity.magnitude >= maxSpeedForward)
+                {
+                    rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeedForward);
+                }
             }
-        }
-        else if (playerInput[0] < 0)
-        {
-            rb.AddForceAtPosition(playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
-
-            if (rb.velocity.magnitude >= maxSpeedBackward)
+            else if (playerInput[0] < 0)
             {
-                rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeedBackward);
+                rb.AddForceAtPosition(playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
+
+                if (rb.velocity.magnitude >= maxSpeedBackward)
+                {
+                    rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeedBackward);
+                }
+            }
+            else
+            {
+                rb.AddForceAtPosition(-playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
             }
         }
         else
         {
             rb.AddForceAtPosition(-playerInput[1] * steerForce * transform.right, motorPosition.position, ForceMode.Force);
         }
+
 
         #endregion
 
@@ -91,5 +99,10 @@ public class BoatMovement : MonoBehaviour
     public float GetForwardAngleRadar()
     {
         return transform.eulerAngles.y;
+    }
+
+    public void AddForceToMovement(Vector3 force)
+    {
+        rb.AddForce(force, ForceMode.Force);
     }
 }
