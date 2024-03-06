@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_intactIce: {fileID: 8547065142704085596}
   m_brokenIce: {fileID: 237010802458306309}
+  m_secondsToCollider: 1
 --- !u!95 &7822782464093446120
 Animator:
   serializedVersion: 5

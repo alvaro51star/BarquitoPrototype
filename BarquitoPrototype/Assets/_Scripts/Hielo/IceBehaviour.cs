@@ -9,6 +9,7 @@ public class IceBehaviour : MonoBehaviour
     [SerializeField] private GameObject m_intactIce, m_brokenIce;
     private Animation m_iceAnimation;
     private Collider m_collider;
+    [SerializeField] private float m_secondsToCollider;
 
     private void Start()
     {
@@ -22,6 +23,10 @@ public class IceBehaviour : MonoBehaviour
         m_brokenIce.SetActive(false);
         //m_collider.enabled = false;
         //m_iceAnimation.Play();
-        //gameObject.SetActive(false);
+    }
+
+    public void ApagarCollider()
+    {
+        gameObject.SetActive(false);
     }
 }

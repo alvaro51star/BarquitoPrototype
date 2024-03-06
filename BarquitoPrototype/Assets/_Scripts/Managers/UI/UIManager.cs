@@ -43,14 +43,12 @@ public class UIManager : MonoBehaviour
     {
         float resultado = actualState / maxState;
         m_desgasteImg.fillAmount = resultado;
-        Debug.Log("img fill: " + resultado);
     }
 
     public void GasolinaFillImage(float actualState, float maxState)
     {
         float resultado = actualState / maxState;
         m_gasolinaImg.fillAmount = resultado;
-        Debug.Log("img fill: " + resultado);
     }
 
     //pause menu

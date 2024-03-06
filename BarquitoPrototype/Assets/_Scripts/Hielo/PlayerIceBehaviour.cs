@@ -7,24 +7,26 @@ public class PlayerIceBehaviour : MonoBehaviour
     //Variables
     [SerializeField] BoatMovement m_boatMovement;
     [SerializeField] BoatManager m_boatManager;
+    [SerializeField] private float m_secondsToCollider;
+    private IceBehaviour m_currentIce;
 
     private void OnTriggerEnter(Collider other)
     {
-        IceBehaviour iceBehaviour = other.GetComponent<IceBehaviour>();
-        if (iceBehaviour != null)
+        m_currentIce = other.GetComponent<IceBehaviour>();
+        if (m_currentIce != null)
         {
-            iceBehaviour.BreakIce();
+            m_currentIce.BreakIce();
             CalculateSlow(other.attachedRigidbody);
+            m_currentIce.ApagarCollider();
+            m_currentIce = null;
+            StartCoroutine(ReleaseIce());
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private IEnumerator ReleaseIce()
     {
-        IceBehaviour iceBehaviour = other.GetComponent<IceBehaviour>();
-        if (iceBehaviour != null)
-        {
-            m_boatMovement.m_slow = 1;
-        }
+        yield return new WaitForSeconds(m_secondsToCollider);
+        m_boatMovement.m_slow = 1;
     }
 
     private void CalculateSlow(Rigidbody ice)

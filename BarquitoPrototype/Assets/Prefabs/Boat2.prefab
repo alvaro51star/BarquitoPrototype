@@ -298,6 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_boatMovement: {fileID: 6649600631138248728}
   m_boatManager: {fileID: 6436186741407165073}
+  m_secondsToCollider: 1
 --- !u!114 &6436186741407165073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_currentBienestarBarco: 0
   m_maxBienestarBarco: 100
-  m_desgasteMultiplier: 5
+  m_desgasteMultiplier: 10
   m_secondsToFirstHit: 10
   m_currentGasolina: 0
   m_maxGasolina: 100

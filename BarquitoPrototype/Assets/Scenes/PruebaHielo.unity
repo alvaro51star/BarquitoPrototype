@@ -2078,6 +2078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseLimited: 0
   pauseMenu: {fileID: 0}
+  endMenu: {fileID: 0}
   m_desgasteText: {fileID: 1135331447}
   m_desgasteImg: {fileID: 2052361115}
   m_gasolinaImg: {fileID: 2103828366}
@@ -3041,6 +3042,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Boat2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7887043497309402683, guid: 01b0dc0b74a70ea4b85c6a4282f97b08,
+        type: 3}
+      propertyPath: m_secondsToCollider
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8102559025798162295, guid: 01b0dc0b74a70ea4b85c6a4282f97b08,
         type: 3}
