@@ -12,10 +12,15 @@ public class ArponBehaviour : MonoBehaviour
 
     [SerializeField] private Transform forwardDirection;
 
+    [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private BoatMovement boatMovement;
+    [SerializeField] private Transform shootPoint;
+    private bool isArponActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -24,12 +29,46 @@ public class ArponBehaviour : MonoBehaviour
         Transform nearestIceberg = NearestIceberg();
         if (nearestIceberg == null)
         {
-            Debug.Log("Null Iceberg");
+            //Debug.Log("Null Iceberg");
             arponHead.LookAt(initialTransform.position);
+            lineRenderer.SetPosition(1, shootPoint.position);
+            isArponActive = false;
         }
         else
         {
             arponHead.LookAt(new Vector3(nearestIceberg.position.x, arponHead.position.y, nearestIceberg.position.z));
+        }
+
+        //Toggle Arpon
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            ToggleArpon(nearestIceberg);
+        }
+
+        if (!isArponActive)
+        {
+            lineRenderer.SetPosition(1, shootPoint.position);
+        }
+
+        lineRenderer.SetPosition(0, shootPoint.position);
+    }
+
+    private void ToggleArpon(Transform nearestIceberg)
+    {
+        if (!nearestIceberg)
+        {
+            return;
+        }
+
+        isArponActive = !isArponActive;
+        if (isArponActive)
+        {
+            lineRenderer.SetPosition(1, NearestIceberg().position);
+            lineRenderer.enabled = true;
+        }
+        else
+        {
+            lineRenderer.SetPosition(1, shootPoint.position);
         }
     }
 
