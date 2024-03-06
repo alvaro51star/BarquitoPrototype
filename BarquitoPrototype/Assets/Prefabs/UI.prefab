@@ -1620,7 +1620,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4197145999524298105}
         m_TargetAssemblyTypeName: RadioManager, Assembly-CSharp
-        m_MethodName: LastSong
+        m_MethodName: PreviousSong
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2418,7 +2418,13 @@ MonoBehaviour:
   m_musicAudioSource: {fileID: 5800262791331980323}
   m_callAudioSource: {fileID: 5849378928980780876}
   m_musicInCallVolume: 0.5
-  m_clipList: []
+  m_clipList:
+  - {fileID: 8300000, guid: 1841f98d55f001649bbccc1bb43aad67, type: 3}
+  - {fileID: 8300000, guid: 86c5810fd0d4cf64aa7c2b75f017f260, type: 3}
+  - {fileID: 8300000, guid: 22bbedf02c55cdd41a90f73886728119, type: 3}
+  - {fileID: 8300000, guid: f258eb6059403b54abacda8700390a5c, type: 3}
+  - {fileID: 8300000, guid: 7a4eca2a77510154f9e6ab536249f96c, type: 3}
+  - {fileID: 8300000, guid: 38fe6530c01feab4aa551a5d4282df6d, type: 3}
 --- !u!82 &5800262791331980323
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2525,7 +2531,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: dd4223d7bb3c9f94c8425273565eb1cd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

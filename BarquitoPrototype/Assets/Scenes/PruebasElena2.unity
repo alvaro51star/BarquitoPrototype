@@ -887,18 +887,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc4c9484256aeef4a860e465e594034b, type: 3}
---- !u!114 &789031827 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4197145999524298105, guid: abd7fd6981385734dae6876c1e502e34,
-    type: 3}
-  m_PrefabInstance: {fileID: 1400220603450537234}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4331e493032dd614aa08cc19da5db640, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &852984999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2527,26 +2515,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 4197145999524298105, guid: abd7fd6981385734dae6876c1e502e34,
-        type: 3}
-      propertyPath: m_clipList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4197145999524298105, guid: abd7fd6981385734dae6876c1e502e34,
-        type: 3}
-      propertyPath: m_clipList.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 38fe6530c01feab4aa551a5d4282df6d, type: 3}
-    - target: {fileID: 4197145999524298105, guid: abd7fd6981385734dae6876c1e502e34,
-        type: 3}
-      propertyPath: m_clipList.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 6751e99d84ae6344aa5a8ffd2e194c7d, type: 3}
-    - target: {fileID: 4197145999524298105, guid: abd7fd6981385734dae6876c1e502e34,
-        type: 3}
-      propertyPath: m_clipList.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: d3fbc689b87c4cd43a524b910e3e6201, type: 3}
     - target: {fileID: 5555716676640637173, guid: abd7fd6981385734dae6876c1e502e34,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2596,16 +2564,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8004651935056301145, guid: abd7fd6981385734dae6876c1e502e34,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 789031827}
-    - target: {fileID: 8004651935056301145, guid: abd7fd6981385734dae6876c1e502e34,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PreviousSong
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
