@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Repostar
   - Iceberg
+  - DialogueTrigger
   layers:
   - Default
   - TransparentFX

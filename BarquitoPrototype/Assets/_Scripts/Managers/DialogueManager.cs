@@ -6,11 +6,6 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public enum DialogueOrigin
-{
-    Puerta, Telefonillo
-}
-
 public class DialogueManager : MonoBehaviour
 {
     //Variables

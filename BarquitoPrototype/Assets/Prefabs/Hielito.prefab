@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8070643741662752216}
   - component: {fileID: 1052743177667111757}
   - component: {fileID: 6708222150226011543}
-  - component: {fileID: 7822782464093446120}
   m_Layer: 0
   m_Name: Hielito
   m_TagString: Untagged
@@ -93,7 +92,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6550902058390633172}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 1827226128182048838, guid: 4adaadb858948c9409bf61a03cb1851d,
     type: 3}
@@ -118,27 +117,6 @@ MonoBehaviour:
   m_intactIce: {fileID: 8547065142704085596}
   m_brokenIce: {fileID: 237010802458306309}
   m_secondsToCollider: 1
---- !u!95 &7822782464093446120
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6550902058390633172}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cfb00d961ee413e4e8880d79ccec2be6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1120096411010472532
 PrefabInstance:
   m_ObjectHideFlags: 0

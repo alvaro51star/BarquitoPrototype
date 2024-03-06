@@ -22,6 +22,7 @@ public class RadioManager : MonoBehaviour
     private void Start()
     {
         m_musicVolume = m_musicAudioSource.volume;
+        EventManager.StartDialogue += StartCall;
     }
     
     public void PlayStopMusic()
@@ -41,6 +42,7 @@ public class RadioManager : MonoBehaviour
         m_musicAudioSource.volume = m_musicInCallVolume;
         m_songOn.SetActive(true);
         m_callAudioSource.Play();
+        DialogueManager.instance.EnterDialogueMode();
     }
 
     public void EndCall()

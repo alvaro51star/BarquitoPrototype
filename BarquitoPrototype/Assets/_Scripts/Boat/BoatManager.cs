@@ -5,6 +5,8 @@ using UnityEngine;
 public class BoatManager : MonoBehaviour
 {
     //Variables
+    private BoatMovement m_boatMovement;
+
     [Header("Desgaste")]
     [SerializeField] private float m_currentBienestarBarco;
     [SerializeField] private float m_maxBienestarBarco;
@@ -21,11 +23,13 @@ public class BoatManager : MonoBehaviour
     [Header("Tags")]
     [SerializeField] private string m_repostarTag = "";
 
+
     private void Start()
     {
-        ArreglarBarco();
+        m_boatMovement = GetComponent<BoatMovement>();
         LlenarGasolina();
         m_primerGolpeCorutina = PrimerGolpeCorutina();
+        ArreglarBarco();
     }
 
     public void Desgaste(float iceMassPorcentage)
@@ -63,13 +67,20 @@ public class BoatManager : MonoBehaviour
     {
         m_currentBienestarBarco = m_maxBienestarBarco;
         UIManager.instance.DesgasteFillImage(m_currentBienestarBarco, m_maxBienestarBarco);
+        m_boatMovement.canMove = true;
+        
     }
 
 
     public void LowerGas()
     {
         m_currentGasolina -= m_consumoGasolina;
+        m_currentGasolina = Mathf.Clamp(m_currentGasolina, 0, m_maxGasolina);
         UIManager.instance.GasolinaFillImage(m_currentGasolina, m_maxGasolina);
+        if (m_currentGasolina <= 0)
+        {
+            m_boatMovement.canMove = false;
+        }
     }
 
     private void LlenarGasolina()
@@ -85,6 +96,11 @@ public class BoatManager : MonoBehaviour
         {
             ArreglarBarco();
             LlenarGasolina();
+        }
+        else if (tag == "DialogueTrigger")
+        {
+            EventManager.StartDialogue?.Invoke();
+            other.gameObject.SetActive(false);
         }
     }
 }
