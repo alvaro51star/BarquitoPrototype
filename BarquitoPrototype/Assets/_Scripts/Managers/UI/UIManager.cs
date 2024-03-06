@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     [Header("Testing:")]
     [SerializeField] private bool mouseLimited;
 
-    [Header("UI Gameobjects:")]
+    [Header("UI Menus:")]
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject endMenu;
 
@@ -22,6 +22,9 @@ public class UIManager : MonoBehaviour
 
     [Header("Gasolina")]
     [SerializeField] private Image m_gasolinaImg;
+
+    private List<Image> radarInstances;
+    private float _prevPlayerFwd = 0;
 
     private void Awake()
     {
@@ -39,6 +42,8 @@ public class UIManager : MonoBehaviour
         }
     }
 
+
+    //HUD barras
     public void DesgasteFillImage(float actualState, float maxState)
     {
         float resultado = actualState / maxState;
