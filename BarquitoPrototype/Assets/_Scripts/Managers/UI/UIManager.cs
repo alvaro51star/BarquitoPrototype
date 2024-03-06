@@ -23,6 +23,9 @@ public class UIManager : MonoBehaviour
     [Header("Gasolina")]
     [SerializeField] private Image m_gasolinaImg;
 
+    [Header("Radio")]
+    [SerializeField] private GameObject m_RadioMenu;
+
     private List<Image> radarInstances;
     private float _prevPlayerFwd = 0;
 
@@ -42,6 +45,13 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            RadioMenu();
+        }
+    }
 
     //HUD barras
     public void DesgasteFillImage(float actualState, float maxState)
@@ -94,5 +104,22 @@ public class UIManager : MonoBehaviour
     public void LoadSceneMainMenu()
     {
         SceneManager.LoadScene(0);//funcionara solo si esta en la scene 0
+    }
+
+    //radio buttons on RadioManager
+    public void RadioMenu()
+    {
+        if (m_RadioMenu.activeSelf)
+        {
+            m_RadioMenu.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else
+        {
+            m_RadioMenu.SetActive(true);
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+        }
     }
 }

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class RadioManager : MonoBehaviour
 {
+    [Header("UI")]
+    [SerializeField] private GameObject m_callOn;
+    [SerializeField] private GameObject m_songOn;
+
     [Header("AudioSources:")]
     [SerializeField] private AudioSource m_musicAudioSource;
     [SerializeField] private AudioSource m_callAudioSource;
@@ -19,6 +23,7 @@ public class RadioManager : MonoBehaviour
     {
         m_musicVolume = m_musicAudioSource.volume;
     }
+    
     public void PlayStopMusic()
     {
         if(m_musicAudioSource.isPlaying)
@@ -34,12 +39,14 @@ public class RadioManager : MonoBehaviour
     public void StartCall()
     {
         m_musicAudioSource.volume = m_musicInCallVolume;
+        m_songOn.SetActive(true);
         m_callAudioSource.Play();
     }
 
     public void EndCall()
     {
         m_musicAudioSource.volume = m_musicVolume;
+        m_songOn.SetActive(false);
         m_callAudioSource.Stop();
     }
 
@@ -49,7 +56,7 @@ public class RadioManager : MonoBehaviour
         PlaySong();
     }
 
-    public void LastSong()
+    public void PreviousSong()
     {
         m_songClip--;
         PlaySong();
