@@ -20,6 +20,7 @@ public class EndTrigger : MonoBehaviour
             if(islandCounter >= numberOfIslandsToConnect)
             {
                 uIManager.ActivateEndMenu();
+                islandCollider.enabled = false; 
             }
         }
     }
