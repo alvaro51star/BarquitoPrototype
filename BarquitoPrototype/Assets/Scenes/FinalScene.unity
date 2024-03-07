@@ -12136,7 +12136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574126053}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.23298086, y: -2.5060527e-17, z: -3.4209384e-17, w: 0.9724813}
+  m_LocalRotation: {x: 0.23298088, y: 0.000000032403097, z: -0.000000007762926, w: 0.97248137}
   m_LocalPosition: {x: -2.9820862, y: -52.99745, z: 52.559765}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -25226,6 +25226,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoatDEFINITIVO
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293181953951137295, guid: 519aa9354954df94b9a51c24b718c191,
+        type: 3}
+      propertyPath: steerForce
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3293181953951137295, guid: 519aa9354954df94b9a51c24b718c191,
+        type: 3}
+      propertyPath: maxSpeedForward
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4413113252525349212, guid: 519aa9354954df94b9a51c24b718c191,
         type: 3}
@@ -48840,7 +48850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140682972}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.23298086, y: -2.5060527e-17, z: -3.4209384e-17, w: 0.9724813}
+  m_LocalRotation: {x: 0.23298088, y: 0.000000032403097, z: -0.000000007762926, w: 0.97248137}
   m_LocalPosition: {x: -2.9820862, y: -52.99745, z: 52.559765}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

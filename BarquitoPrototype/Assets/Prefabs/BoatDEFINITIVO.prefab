@@ -573,6 +573,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5006107547250734789, guid: 231bf54b83cf4134c9d367eff4e3c6ce,
+        type: 3}
+      propertyPath: steerForce
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006107547250734789, guid: 231bf54b83cf4134c9d367eff4e3c6ce,
+        type: 3}
+      propertyPath: maxSpeedForward
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8224572113093005208, guid: 231bf54b83cf4134c9d367eff4e3c6ce,
         type: 3}
       propertyPath: m_LocalPosition.x
