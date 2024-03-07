@@ -13,14 +13,11 @@ public class MainMenuManager : MonoBehaviour
     }
     public void StartGame()
     {
-        /*
         var nextScene = SceneManager.GetSceneByBuildIndex(1);
         var nextSceneName = nextScene.name;
 
         //Initiate.Fade(nextSceneName, Color.black, 10); //para el fade hay que meter el paquete
         SceneManager.LoadScene(1);//game scene
-        */
-        Debug.Log("start game"); // quitar esto y poner lo q está en comentarios cuando halla escena final en el buidl setting.
     }
 
     public void Credits()
