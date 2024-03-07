@@ -1,5 +1,5 @@
 ¿Hola? Ejem... ¿Hola? 
-Soy Paco Mermela, el nuevo representante de MeowjesticGames.
+Soy Francisco Mermela, el nuevo representante de MeowjesticGames.
 
 Espero que no estés teniendo ningún problema con el barco, porque necesito que abras camino entre Isla Pelícano e Isla de la Estrella.
 
